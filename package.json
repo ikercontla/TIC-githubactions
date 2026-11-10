@@ -1,0 +1,24 @@
+{
+  "name": "tic-githubactions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ikercontla/TIC-githubactions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ikercontla/TIC-githubactions/issues"
+  },
+  "homepage": "https://github.com/ikercontla/TIC-githubactions#readme",
+  "dependencies": {
+    "moment": "^2.31.0"
+  }
+}

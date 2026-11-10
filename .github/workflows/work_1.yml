@@ -1,9 +1,22 @@
 name: Work 1 Iker
 on: [push]
 jobs: 
-  build:     
+  build-node:     
     runs-on: ubuntu-latest
+    container: node:24
+
     steps:
-      - name: Primer workflow github
-        run: echo "Hola sandia!"
-  
+      - name: Verificar entorno
+        run: |
+          echo "Ejecutando dentro de Docker"
+          node --version
+          npm --version
+
+      - name: Descargar repositorio
+        users: actions/checkout@v4
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Ejecutar aplicacion
+        run: node app.js
