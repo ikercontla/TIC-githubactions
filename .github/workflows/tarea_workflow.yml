@@ -15,6 +15,5 @@ jobs:
           python --version
 
       - name: Ejecutar script de python     
-        run: |
-          python -c print("Hola desde el contenedor    
-          Docker de Python en GitHub Actions")
+        run: python -c 'print("Hola desde el contenedor    
+          Docker de Python en GitHub Actions")'
