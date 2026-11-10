@@ -1,20 +1,20 @@
 name: Python Container Workflow
-on: push
+on: [push]
 jobs:
   run-in-python-container:
     runs-on: ubuntu-latest
     container:
       image: python:3.11-alpine
 
-      steps:
-        - name: Descargar el repositorio        
-          uses: actions/checkout@v4
+    steps:
+      - name: Descargar el repositorio        
+        uses: actions/checkout@v4
 
-        - name: Verificar versión del entorno     
-          run: |
-            python --version
+      - name: Verificar versión del entorno     
+        run: |
+          python --version
 
-        - name: Ejecutar script de python     
-          run: |
-            python -c "print("Hola desde el contenedor    
-            Docker de Python en GitHub Actions")"
+      - name: Ejecutar script de python     
+        run: |
+          python -c "print("Hola desde el contenedor    
+          Docker de Python en GitHub Actions")"
