@@ -1,0 +1,9 @@
+name: Work 1 Iker
+on: [push]
+jobs: 
+  build:     
+    runs-on: ubuntu-latest
+    steps:
+      - name: Primer workflow github
+        run: echo "Hola sandia!
+  
