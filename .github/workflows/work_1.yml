@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Primer workflow github
-        run: echo "Hola sandia!
+        run: echo "Hola sandia!"
   
