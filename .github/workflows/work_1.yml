@@ -7,13 +7,13 @@ jobs:
 
     steps:
       - name: Verificar entorno
-        run: |
+        run: | 
           echo "Ejecutando dentro de Docker"
           node --version
           npm --version
 
       - name: Descargar repositorio
-        users: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Instalar dependencias
         run: npm ci
